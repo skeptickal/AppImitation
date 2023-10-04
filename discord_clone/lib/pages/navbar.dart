@@ -72,7 +72,7 @@ class _NavBarState extends State<NavBar> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Padding(
+                  const Padding(
                     padding: EdgeInsets.all(16.0),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -88,7 +88,7 @@ class _NavBarState extends State<NavBar> {
                       ],
                     ),
                   ),
-                  Padding(
+                  const Padding(
                     padding: EdgeInsets.fromLTRB(16, 4, 16, 8),
                     child: TextField(
                       decoration: InputDecoration(
@@ -98,14 +98,14 @@ class _NavBarState extends State<NavBar> {
                               TextStyle(fontSize: 11, color: Colors.grey),
                           border: OutlineInputBorder(),
                           hintText: 'Find or start a conversation',
-                          suffixIcon: Icon(Icons.search, color: Colors.grey),
+                          suffixIcon: Icon(Icons.search, color: Colors.grey, size: 20,),
                           contentPadding: EdgeInsets.symmetric(
                               vertical: 2, horizontal: 16)),
                     ),
                   ),
                   ListTile(
                     leading: Stack(children: [
-                      CircleAvatar(
+                      const CircleAvatar(
                           foregroundImage: AssetImage('assets/Gremmie.jpg')),
                       Positioned(
                         bottom: 0,
@@ -124,7 +124,7 @@ class _NavBarState extends State<NavBar> {
                       ),
                     ]),
                     title:
-                        Text('Gremmie', style: TextStyle(color: Colors.white)),
+                        const Text('Gremmie', style: TextStyle(color: Colors.white)),
                   )
                 ],
               ),
