@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:discord_clone/pages/navbar.dart';
 
 class HomePageScreen extends StatelessWidget {
@@ -9,7 +8,7 @@ class HomePageScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color(0xFF36393e),
+        backgroundColor: const Color(0xFF36393e),
         title:
             const Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
           Row(children: [
@@ -29,9 +28,9 @@ class HomePageScreen extends StatelessWidget {
           ),
         ]),
       ),
-      drawer: NavBar(),
+      drawer: const NavBar(),
       body: Container(
-        decoration: BoxDecoration(color: Color(0xFF424549)),
+        decoration: const BoxDecoration(color: Color(0xFF424549)),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [

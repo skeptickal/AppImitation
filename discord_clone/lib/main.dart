@@ -16,11 +16,11 @@ void main() {
 
     routes: {
 
-      '/': (context) => HomePageScreen(),
-      '/friends': (context) => FriendsScreen(),
-      '/search': (context) => SearchScreen(),
-      '/notifications': (context) => NotificationScreen(),
-      '/profile': (context) => ProfileScreen(),
+      '/': (context) => const HomePageScreen(),
+      '/friends': (context) => const FriendsScreen(),
+      '/search': (context) => const SearchScreen(),
+      '/notifications': (context) => const NotificationScreen(),
+      '/profile': (context) => const ProfileScreen(),
 
 }
   ));
