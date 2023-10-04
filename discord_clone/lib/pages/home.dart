@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:discord_clone/pages/navbar.dart';
 
 class HomePageScreen extends StatelessWidget {
   const HomePageScreen({super.key});
@@ -22,12 +23,13 @@ class HomePageScreen extends StatelessWidget {
           Row(
             children: [
               Icon(Icons.search),
+              SizedBox(width: 15),
               Icon(Icons.people),
             ],
           ),
         ]),
       ),
-      drawer: Drawer(),
+      drawer: NavBar(),
       body: Container(
         decoration: BoxDecoration(color: Color(0xFF424549)),
         child: Column(
