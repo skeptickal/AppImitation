@@ -10,6 +10,7 @@ class NavBar extends StatefulWidget {
 }
 
 class _NavBarState extends State<NavBar> {
+  final TextEditingController _serverName = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return BlocBuilder<NavbarCubit, NavbarState>(
@@ -70,7 +71,8 @@ class _NavBarState extends State<NavBar> {
                           onPressed: () {
                             context
                                 .read<NavbarCubit>()
-                                .addServer(serverName: 'NAD');
+                                .addServer(serverName: _serverName.text);
+                                _serverName.clear();
                           },
                           backgroundColor: const Color(0xFF36393e),
                           child: const Icon(
@@ -79,6 +81,7 @@ class _NavBarState extends State<NavBar> {
                             color: Colors.green,
                           ),
                         ),
+                      
                       ],
                     ),
                   ),
@@ -103,11 +106,13 @@ class _NavBarState extends State<NavBar> {
                           ],
                         ),
                       ),
-                      const Padding(
-                        padding: EdgeInsets.fromLTRB(16, 4, 16, 8),
+                      Padding(
+                        padding: const EdgeInsets.fromLTRB(16, 4, 16, 8),
                         child: TextField(
+                          style: TextStyle(color: Colors.white, fontSize: 14),
+                          controller: _serverName,
                           maxLines: 1,
-                          decoration: InputDecoration(
+                          decoration: const InputDecoration(
                               filled: true,
                               fillColor: Color(0xFF1e2124),
                               hintStyle:

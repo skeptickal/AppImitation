@@ -15,8 +15,9 @@ class NavbarState {
     List<String>? friendNames,
   }) {
     return NavbarState(
-        friendNames: friendNames ?? this.friendNames,
-        serverNames: serverNames ?? this.serverNames);
+      friendNames: friendNames ?? this.friendNames,
+      serverNames: serverNames ?? this.serverNames,
+    );
   }
 }
 

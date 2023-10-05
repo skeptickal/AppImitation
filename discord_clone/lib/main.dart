@@ -1,4 +1,5 @@
 
+import 'package:discord_clone/pages/add_server.dart';
 import 'package:discord_clone/pages/friends.dart';
 import 'package:discord_clone/pages/profile.dart';
 import 'package:discord_clone/pages/home.dart';
@@ -22,6 +23,7 @@ void main() {
         '/search': (context) => const SearchScreen(),
         '/notifications': (context) => const NotificationScreen(),
         '/profile': (context) => const ProfileScreen(),
+        '/addserver':(context) => const AddServerScreen(),
   
   }
     ),
