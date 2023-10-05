@@ -34,6 +34,7 @@ class HomePageScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            //Divider(color: Colors.white, thickness: 2, height: 2),
             Center(
               child: Image.asset(
                 'assets/discord.png',
